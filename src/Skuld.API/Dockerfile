@@ -5,7 +5,7 @@ COPY ["src/Skuld.API/Skuld.API.csproj", "src/Skuld.API/"]
 RUN dotnet restore "src/Skuld.API/Skuld.API.csproj"
 COPY . .
 
-WORKDIR ./src/RestAPI
+WORKDIR ./src/Skuld.API
 
 RUN dotnet build "Skuld.API.csproj" -c Release -o /app/build
 RUN dotnet publish "Skuld.API.csproj" -c Release -o /app/publish
