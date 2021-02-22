@@ -4,9 +4,4 @@ services:
     build: 
         context: .
         dockerfile: src/Skuld.API/Dockerfile
-    ports:
-      - "8080:8080"
-    container_name: "skuldapi"
-    env_file:
-        - .env
-    network_mode: host
+    env_file: .env
