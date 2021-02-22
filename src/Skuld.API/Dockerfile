@@ -7,6 +7,8 @@ COPY . .
 
 WORKDIR ./src/Skuld.API
 
+RUN dotnet restore --configfile NuGet.config
+
 RUN dotnet build "Skuld.API.csproj" -c Release -o /app/build
 RUN dotnet publish "Skuld.API.csproj" -c Release -o /app/publish
 
