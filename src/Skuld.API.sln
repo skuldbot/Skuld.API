@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30516.212
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skuld.API", "Skuld.API\Skuld.API.csproj", "{01624135-6B41-41A6-84ED-3BC9DCEE94EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Skuld.API", "Skuld.API\Skuld.API.csproj", "{01624135-6B41-41A6-84ED-3BC9DCEE94EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Skuld.Models", "submodules\Skuld.Models\Skuld.Models\Skuld.Models.csproj", "{D1C11C0D-F5AA-45BF-9D40-70D2389C35E6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Skuld.Core", "submodules\Skuld.Core\Skuld.Core\Skuld.Core.csproj", "{867E6F4A-9AC4-4FE0-8AB3-889D2F922C45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1A75CE91-D3E2-4DD3-8334-B9B08AA6AF40}"
+	ProjectSection(SolutionItems) = preProject
+		.env.default = .env.default
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,14 @@ Global
 		{01624135-6B41-41A6-84ED-3BC9DCEE94EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01624135-6B41-41A6-84ED-3BC9DCEE94EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01624135-6B41-41A6-84ED-3BC9DCEE94EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1C11C0D-F5AA-45BF-9D40-70D2389C35E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1C11C0D-F5AA-45BF-9D40-70D2389C35E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1C11C0D-F5AA-45BF-9D40-70D2389C35E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1C11C0D-F5AA-45BF-9D40-70D2389C35E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{867E6F4A-9AC4-4FE0-8AB3-889D2F922C45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{867E6F4A-9AC4-4FE0-8AB3-889D2F922C45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{867E6F4A-9AC4-4FE0-8AB3-889D2F922C45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{867E6F4A-9AC4-4FE0-8AB3-889D2F922C45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

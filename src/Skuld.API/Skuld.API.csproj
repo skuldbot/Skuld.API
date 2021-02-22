@@ -1,8 +1,26 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+	<OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+	<LangVersion>preview</LangVersion>
+	<NeutralLanguage>en-GB</NeutralLanguage>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.3" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="5.0.0-alpha.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\submodules\Skuld.Core\Skuld.Core\Skuld.Core.csproj" />
+    <ProjectReference Include="..\submodules\Skuld.Models\Skuld.Models\Skuld.Models.csproj" />
+  </ItemGroup>
 
 
 </Project>

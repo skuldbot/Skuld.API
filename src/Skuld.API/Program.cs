@@ -1,18 +1,18 @@
+using dotenv.net;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using Skuld.Core;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace Skuld.API
 {
 	public class Program
 	{
-		public static void Main(string[] args)
+		public static async Task Main(string[] args)
 		{
+			DotEnv.Config(filePath: Path.Combine(SkuldAppContext.BaseDirectory, ".env"));
+
 			CreateHostBuilder(args).Build().Run();
 		}
 
